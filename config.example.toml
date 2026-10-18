@@ -1,0 +1,24 @@
+# Copy to config.toml. No paid API is used by this application.
+data_dir = "data"
+host = "127.0.0.1"
+port = 8765
+# Required if binding a non-loopback host. Send Authorization: Bearer <token>.
+api_token = ""
+ffmpeg = "" # Empty: PATH, then existing CapCut installations on Windows.
+ffprobe = "" # Optional. Falls back to FFmpeg inspection.
+ollama_url = "http://127.0.0.1:11434"
+ollama_model = "qwen3.5:4b"
+ollama_context = 8192
+provider_timeout = 180
+max_stage_attempts = 2
+# Optional local HTTP server; empty = use the installed vieneu SDK in a subprocess.
+tts_url = ""
+tts_voice = "Hải Đăng"
+tts_model = "vieneu-tts-v3-turbo"
+whisper_model = "small"
+allow_model_downloads = false
+search_enabled = true
+search_results = 5
+max_upload_mb = 100
+render_timeout = 1200
+# Only allow local AI endpoints: no API keys or paid cloud adapters.
